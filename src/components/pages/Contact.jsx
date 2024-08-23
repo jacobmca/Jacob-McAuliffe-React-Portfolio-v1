@@ -11,7 +11,7 @@ function Contact() {
     } = useForm();
 
     const onSubmit = async (data) => {
-        const { name, email, subject, message } = data;
+        const { name, email, message } = data;
         try {
             const templateParams = {
                 name,
