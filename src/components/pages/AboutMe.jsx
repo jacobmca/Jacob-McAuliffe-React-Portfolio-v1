@@ -3,9 +3,9 @@ import React from 'react';
 function AboutMe() {
     return (
         <div>
-            <h1>About Me</h1>
-            <img />
-            <p>Jacob McAuliffe is a programmer. There is no dog.</p>
+            <h1 className="text-center">About Me</h1>
+            <img src="./jacob-picture.jpg" className="img-fluid img-thumbnail" />
+            <p className="text-center">Jacob McAuliffe is a programmer. There is no dog.</p>
         </div>
     )
 }

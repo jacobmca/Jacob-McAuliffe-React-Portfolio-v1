@@ -13,8 +13,12 @@ function App() {
   return (
     <Router>
       <div>
-        <Header />
-        <Navigation />
+        <div className="navbar navbar-expand-sm bg-secondary">
+          <div className="container-fluid">
+            <Header />
+            <Navigation />
+          </div>
+        </div>
         <Routes>
           <Route path="/" element={<AboutMe />} />
           <Route path="/portfolio" element={<Portfolio />} />
