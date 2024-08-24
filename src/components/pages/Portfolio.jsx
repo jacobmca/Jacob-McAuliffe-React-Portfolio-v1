@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from './Project';
+import Project from '../Project';
 
 function Portfolio() {
     const projects = [
@@ -7,37 +7,37 @@ function Portfolio() {
             title: 'Jake\'s Mongo DB Network Backend',
             image: 'path_to_image_1',
             deployedLink: '',
-            githubLink: 'https://github.com/jacobmca/The-Jake-MongoDB-Network'
+            repoLink: 'https://github.com/jacobmca/The-Jake-MongoDB-Network'
         },
         {
             title: 'Employee Tracker SQL Database Sample',
             image: 'path_to_image_1',
             deployedLink: '',
-            githubLink: 'https://github.com/jacobmca/Employee-Tracker-Database'
+            repoLink: 'https://github.com/jacobmca/Employee-Tracker-Database'
         },
         {
             title: 'Weather Dashboard',
             image: 'path_to_image_1',
             deployedLink: '',
-            githubLink: 'https://github.com/jacobmca/Weather-Dashboard-Project'
+            repoLink: 'https://github.com/jacobmca/Weather-Dashboard-Project'
         },
         {
             title: 'Personal Blog Sampler',
             image: 'path_to_image_1',
             deployedLink: '',
-            githubLink: 'https://github.com/jacobmca/04-Personal-Blog'
+            repoLink: 'https://github.com/jacobmca/04-Personal-Blog'
         },
         {
             title: 'README Generator',
             image: 'path_to_image_1',
             deployedLink: '',
-            githubLink: 'https://github.com/jacobmca/Inquirer-README-Generator'
+            repoLink: 'https://github.com/jacobmca/Inquirer-README-Generator'
         },
         {
             title: 'Genie Text-Based Game!',
             image: 'path_to_image_1',
             deployedLink: '',
-            githubLink: 'https://github.com/jacobmca/genie-videogame'
+            repoLink: 'https://github.com/jacobmca/genie-videogame'
         },
     ]
 

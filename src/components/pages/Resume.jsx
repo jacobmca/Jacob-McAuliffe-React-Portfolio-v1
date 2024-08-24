@@ -1,10 +1,9 @@
-import Resume from 'react';
-import pdf from './assets';
+import React from 'react';
 
 function Resume() {
     return (
         <div>
-            <a href={pdf} download="jacob-mcauliffe-resume.pdf">Download Resume</a>
+            <a href='/jacob-mcauliffe-resume.pdf' download="jacob-mcauliffe-resume.pdf">Download Resume</a>
             <h2>Front End</h2>
             <ul>
                 <li>HTML</li>
