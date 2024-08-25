@@ -1,23 +1,30 @@
 import React from 'react';
+import '../../index.css';
 
 function Resume() {
     return (
-        <div>
-            <a href='/jacob-mcauliffe-resume.pdf' download="jacob-mcauliffe-resume.pdf">Download Resume</a>
-            <h2 className="text-center">Front End</h2>
-            <ul className="text-center">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>JQuery</li>
-            </ul>
-            <h2 className="text-center">Back End</h2>
-            <ul>
-                <li>Node</li>
-                <li>SQL</li>
-                <li>MongoDB/Mongoose</li>
-            </ul>
+        <div className="text-center">
+            <div className="mt-5">
+                <a href='/jacob-mcauliffe-resume.pdf' download="jacob-mcauliffe-resume.pdf">Download Resume</a>
+            </div>
+            <div className="mt-5">
+                <h2>Front End</h2>
+                <ul style={{ listStylePosition: 'inside', display: 'inline-block', textAlign: 'left' }}>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>JQuery</li>
+                </ul>
+            </div>
+            <div className="mt-5">
+                <h2>Back End</h2>
+                <ul style={{ listStylePosition: 'inside', display: 'inline-block', textAlign: 'left' }}>
+                    <li>Node</li>
+                    <li>SQL</li>
+                    <li>MongoDB/Mongoose</li>
+                </ul>
+            </div>
         </div>
     )
 }

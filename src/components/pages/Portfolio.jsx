@@ -42,11 +42,18 @@ function Portfolio() {
     ]
 
     return (
-        <section>
-            <h1>Portfolio</h1>
-            <div className="project-list">
+        <section className="container">
+            <h1 className="text-center">Portfolio</h1>
+            <div className="row">
                 {projects.map((project, index) => (
-                    <Project />
+                    <div className="col-md-6 mb-4" key={index}>
+                        <Project
+                            title={project.title}
+                            image={project.image}
+                            deployedLink={project.deployedLink}
+                            repoLink={project.repoLink}
+                        />
+                    </div>
                 ))}
             </div>
         </section>
