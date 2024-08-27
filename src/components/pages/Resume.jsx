@@ -5,11 +5,11 @@ function Resume() {
     return (
         <div className="text-center">
             <div className="mt-5">
-                <a href='/jacob-mcauliffe-resume.pdf' download="jacob-mcauliffe-resume.pdf">Download Resume</a>
+                <a href='/jacob-mcauliffe-resume.pdf' download="jacob-mcauliffe-resume.pdf" className="download-resume">Download Resume</a>
             </div>
             <div className="mt-5">
-                <h2>Front End</h2>
-                <ul style={{ listStylePosition: 'inside', display: 'inline-block', textAlign: 'left' }}>
+                <h2 className="full-stack-listing">Front End</h2>
+                <ul className="skills-list">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
@@ -18,8 +18,8 @@ function Resume() {
                 </ul>
             </div>
             <div className="mt-5">
-                <h2>Back End</h2>
-                <ul style={{ listStylePosition: 'inside', display: 'inline-block', textAlign: 'left' }}>
+                <h2 className="full-stack-listing">Back End</h2>
+                <ul className="skills-list">
                     <li>Node</li>
                     <li>SQL</li>
                     <li>MongoDB/Mongoose</li>

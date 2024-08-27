@@ -9,11 +9,13 @@ import Contact from './components/pages/Contact.jsx';
 import Portfolio from './components/pages/Portfolio.jsx';
 import Resume from './components/pages/Resume.jsx';
 
+import './index.css';
+
 function App() {
   return (
     <Router>
-      <div>
-        <div className="navbar navbar-expand-sm bg-secondary">
+      <div style={{ backgroundColor: 'black', color: 'white', minHeight: '100vh' }}>
+        <div className="navbar navbar-expand-sm bg-secondary bg-transparent">
           <div className="container-fluid">
             <Header />
             <Navigation />

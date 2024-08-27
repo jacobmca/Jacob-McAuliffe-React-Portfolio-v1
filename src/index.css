@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Mono+One&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +7,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #cc0000;
 }
 
 code {
@@ -13,9 +14,17 @@ code {
     monospace;
 }
 
+.no-text-dec {
+  text-decoration: none;
+}
+
 /* Header */
 
-
+.header-title {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* Navigation Bar */
 
@@ -23,8 +32,92 @@ Link {
   text-decoration: none;
 }
 
-/* Navigation Bar */
+/* About Me */
 
-.centered-list {
-    
+.about-me {
+  font-size: 100px;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.img-container {
+  display: grid;
+}
+
+.headshot-pic {
+  width: 40%;
+  height: auto;
+  margin: auto;
+  transition: transform .2s; 
+}
+
+.headshot-pic:hover {
+  transform: scale(1.02);
+}
+
+.description {
+  margin-top: 30px;
+}
+
+/* Portfolio */
+
+
+
+/* Contact */
+
+.contact-me {
+  font-size: 90px;
+}
+
+.contact-class {
+  margin-top: 200px;
+}
+
+.contact-spacing {
+  margin-top: 40px;
+}
+
+.submit {
+  margin-top: 30px;
+}
+
+/* Resume */
+
+.download-resume {
+  font-size: 50px;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  transition: transform .2s;
+}
+
+.download-resume:hover {
+  color: white;
+}
+
+.full-stack-listing {
+  font-size: 60px;
+  margin-top: 50px;
+}
+
+.skills-list {
+  list-style-position: inside;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 300px;
+}
+
+li {
+  font-size: 25px;
+}
+
+/* Footer */
+
+.footer-class {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }

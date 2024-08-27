@@ -5,37 +5,37 @@ function Portfolio() {
     const projects = [
         {
             title: 'Jake\'s Mongo DB Network Backend',
-            image: 'path_to_image_1',
+            image: './project-1-mongodb.png',
             deployedLink: '',
             repoLink: 'https://github.com/jacobmca/The-Jake-MongoDB-Network'
         },
         {
             title: 'Employee Tracker SQL Database Sample',
-            image: 'path_to_image_1',
+            image: './project-2-sql.png',
             deployedLink: '',
             repoLink: 'https://github.com/jacobmca/Employee-Tracker-Database'
         },
         {
             title: 'Weather Dashboard',
-            image: 'path_to_image_1',
+            image: 'project-3-weather.png',
             deployedLink: '',
             repoLink: 'https://github.com/jacobmca/Weather-Dashboard-Project'
         },
         {
             title: 'Personal Blog Sampler',
-            image: 'path_to_image_1',
+            image: 'project-4-blog.png',
             deployedLink: '',
             repoLink: 'https://github.com/jacobmca/04-Personal-Blog'
         },
         {
             title: 'README Generator',
-            image: 'path_to_image_1',
+            image: 'project-5-readme-generator.png',
             deployedLink: '',
             repoLink: 'https://github.com/jacobmca/Inquirer-README-Generator'
         },
         {
             title: 'Genie Text-Based Game!',
-            image: 'path_to_image_1',
+            image: 'project-6-genie.png',
             deployedLink: '',
             repoLink: 'https://github.com/jacobmca/genie-videogame'
         },
@@ -43,7 +43,7 @@ function Portfolio() {
 
     return (
         <section className="container">
-            <h1 className="text-center">Portfolio</h1>
+            <h1 className="text-center mt-3 mb-5">Portfolio</h1>
             <div className="row">
                 {projects.map((project, index) => (
                     <div className="col-md-6 mb-4" key={index}>

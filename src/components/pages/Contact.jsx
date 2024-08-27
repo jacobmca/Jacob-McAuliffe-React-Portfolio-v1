@@ -4,7 +4,7 @@ import { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 function Contact() {
-  const { register, handleSubmit, reset } = useForm(); // Destructure reset here
+  const { register, handleSubmit, reset } = useForm();
   const [disabled, setDisabled] = useState(false);
   const [alertInfo, setAlertInfo] = useState({
     display: false,
@@ -50,20 +50,23 @@ function Contact() {
   };
 
   return (
-    <div className='ContactForm'>
+    <div className='contact-class ContactForm'>
       <div className='container'>
         <div className='row'>
           <div className='col-12 text-center'>
             <div className='contactForm'>
               <form id='contact-form' noValidate onSubmit={handleSubmit(onSubmit)}>
                 <div className='row formRow'>
+                  <div className="mb-4">
+                    <h1 className="contact-me">Contact Me!</h1>
+                  </div>
                   <div className='col-6'>
                     <input
                       type='text'
                       name='name'
                       className='form-control formInput'
                       placeholder='Name'
-                      {...register('name')} // Register input
+                      {...register('name')}
                     ></input>
                   </div>
                   <div className='col-6'>
@@ -72,7 +75,7 @@ function Contact() {
                       name='email'
                       className='form-control formInput'
                       placeholder='Email address'
-                      {...register('email')} // Register input
+                      {...register('email')}
                     ></input>
                   </div>
                 </div>
@@ -81,13 +84,13 @@ function Contact() {
                     <textarea
                       rows={3}
                       name='message'
-                      className='form-control formInput'
+                      className='form-control formInput contact-spacing'
                       placeholder='Type Your Message Here'
                       {...register('message')} // Register textarea
                     ></textarea>
                   </div>
                 </div>
-                <button className='submit-btn' type='submit' disabled={disabled}>
+                <button className='submit-btn submit' type='submit' disabled={disabled}>
                   Submit
                 </button>
               </form>

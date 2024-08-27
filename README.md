@@ -20,37 +20,29 @@ To install, please clone this repository to your computer using the following st
 
 ## Description
 
+This is a portfolio demonstrating my current coding skills. You can read a brief biography on me, look through a portfolio of curated projects I've created, submit a form to contact me, or download my resume as well as see a list of my front and back end skills. It also contains a footer linking to relevant social media profiles.
 
-
-This uses EmailJS and React-Hook Form for the Contact section.
+My portfolio utilizes React for the front end design and functionality. Styling is done through a combination of Boostrap and custom CSS. EmailJS and React-Hook Form are used for the Contact section.
 
 ## Usage
-First, ensure that the SQL database "company" is running by entering the following commands via the terminal:
 
-psql -U postgres
-\i database/schema.sql
-\i database/seeds.sql
-\dt
+After downloading the program per the below, run "npm start" in your terminal.
 
 ![Screenshot](assets/screenshots/screenshot1.png)
 
-Once you have confirmed the database is running, navigate to server.js in your terminal and enter "node server.js" to get the program running.
-
-In your terminal, a list of commands will appear that you can navigate to. To select, scrolling over the desired command and press "enter."
+You should immediately be brough to the "About Me" page.
 
 ![Screenshot](assets/screenshots/screenshot1.png)
 
-If you select "Add a department," follow the prompt to enter the name for the new department you are adding to the database.
+On the navigation bar, click "Portfolio" to view a curated list of front and back end coding projects I've created.
 
-If you select "Add a role," follow the prompts to enter the name, salary, and department for the new role you are adding to the database.
+![Screenshot](assets/screenshots/screenshot1.png)
 
-If you select "Add an employee," follow the prompts to enter the first name, last name, department, and manager for the new employee you are adding to the database.
+The "Contact" link will bring you to a page where you can send me a message. Just enter your name, e-mail address, and text body in their respective fields, then click "Enter."
 
-If you select "Update an employee role," follow the prompts to select the employee and the employee's new role.
+![Screenshot](assets/screenshots/screenshot1.png)
 
-To exit the program, select "Exit" in the main list of prompts.
-
-[Please see this video demo.](https://drive.google.com/file/d/1PP3oA2emudyxFvhaZHXWfPYuwG45HWFN/view?usp=sharing) If unable to view, you can also find the video in assets/videos/screenrecording1.mov.
+"Resume" will take you to a page containing a list of my coding skills. Click "Download Resume" to download a PDF of my updated resume to your desktop.
 
 ## Contributions
 When contributing to this repository, please reach out to me via e-mail to discuss the change you would like to make first. I am open to ideas both with regards to data stored in the tables and alterations to user interaction with the data.
@@ -62,7 +54,7 @@ This project is licensed under the MIT License. For more information, please see
 This program was created by Jacob McAuliffe for the UC Berkeley eDX Coding Boot Camp.
 
 ## Tests
-In the future, I would like to incorporate both more data within the tables, and further opportunities for user interaction with this data. Ideas for further data within the table include employment start date, list of any recognitions, vacation time available for the employee, annual bonus. Ideas for user interaction include being able to delete data from the tables, or extra data to create sub-tables within the database as needed.
+First off, I would like to add more projects and skills to this as I continue to learn and grow as a coder! Outside of that, I'd like to continue updating the styling - create a more interactive, motion-based background that's more appealing to the sense. Ultimately this porfolio is as much of a display of my coding skills as the projects it displays, and the nicer I can make it look, the greater utility it will have.
 
 ## Questions
 If you have further questions, you can reach me at [mcauliffemedia@gmail.com](mailto:mcauliffemedia@gmail.com).
