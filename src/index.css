@@ -28,9 +28,21 @@ code {
 
 /* Navigation Bar */
 
-Link {
+.navbar .nav-item .navigation-links {
   text-decoration: none;
+  transition: transform .2s; 
 }
+
+.navbar .nav-item .navigation-links:hover,
+.navbar .nav-item .navigation-links:focus {
+  transform: scale(1.02);
+}
+
+.navbar .nav-item .navigation-links.active-link {
+  color: #99ebff !important;
+  font-weight: bold !important;
+}
+
 
 /* About Me */
 
@@ -58,6 +70,9 @@ Link {
 
 .description {
   margin-top: 30px;
+  padding-left: 250px;
+  padding-right: 250px;
+  font-size: 20px;
 }
 
 /* Portfolio */

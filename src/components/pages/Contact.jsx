@@ -4,7 +4,7 @@ import { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 function Contact() {
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset, formState: { errors }, trigger } = useForm();
   const [disabled, setDisabled] = useState(false);
   const [alertInfo, setAlertInfo] = useState({
     display: false,
@@ -64,19 +64,35 @@ function Contact() {
                     <input
                       type='text'
                       name='name'
-                      className='form-control formInput'
+                      // Added conditional class for error handling
+                      className={`form-control formInput ${errors.name ? 'is-invalid' : ''}`}
                       placeholder='Name'
-                      {...register('name')}
-                    ></input>
+                      // Added custom error message for required validation
+                      {...register('name', { required: 'Name is required' })}
+                      onBlur={() => trigger('name')} // Trigger validation onBlur
+                    />
+                    {/* Added this conditional rendering for error message display */}
+                    {errors.name && <div className="invalid-feedback">{errors.name.message}</div>}
                   </div>
                   <div className='col-6'>
                     <input
                       type='email'
                       name='email'
-                      className='form-control formInput'
+                      // Added conditional class for error handling
+                      className={`form-control formInput ${errors.email ? 'is-invalid' : ''}`}
                       placeholder='Email address'
-                      {...register('email')}
-                    ></input>
+                      // Added custom error message and pattern validation for email
+                      {...register('email', {
+                        required: 'Email is required',
+                        pattern: {
+                          value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                          message: 'Enter a valid email address',
+                        },
+                      })}
+                      onBlur={() => trigger('email')} // Trigger validation onBlur
+                    />
+                    {/* Added this conditional rendering for error message display */}
+                    {errors.email && <div className="invalid-feedback">{errors.email.message}</div>}
                   </div>
                 </div>
                 <div className='row formRow'>
@@ -84,13 +100,18 @@ function Contact() {
                     <textarea
                       rows={3}
                       name='message'
-                      className='form-control formInput contact-spacing'
+                      // Added conditional class for error handling
+                      className={`form-control formInput contact-spacing ${errors.message ? 'is-invalid' : ''}`}
                       placeholder='Type Your Message Here'
-                      {...register('message')} // Register textarea
-                    ></textarea>
+                      // Added custom error message for required validation
+                      {...register('message', { required: 'Message is required' })}
+                      onBlur={() => trigger('message')} // Trigger validation onBlur
+                    />
+                    {/* Added this conditional rendering for error message display */}
+                    {errors.message && <div className="invalid-feedback">{errors.message.message}</div>}
                   </div>
                 </div>
-                <button className='submit-btn submit' type='submit' disabled={disabled}>
+                <button className='btn submit btn-light' type='submit' disabled={disabled}>
                   Submit
                 </button>
               </form>

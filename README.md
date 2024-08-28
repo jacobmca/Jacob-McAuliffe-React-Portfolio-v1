@@ -26,23 +26,21 @@ My portfolio utilizes React for the front end design and functionality. Styling 
 
 ## Usage
 
-After downloading the program per the below, run "npm start" in your terminal.
+After downloading the program per the below, run "npm start" in your terminal. You should immediately be brough to the "About Me" page.
 
-![Screenshot](assets/screenshots/screenshot1.png)
-
-You should immediately be brough to the "About Me" page.
-
-![Screenshot](assets/screenshots/screenshot1.png)
+![Screenshot](public/screenshot1.png)
 
 On the navigation bar, click "Portfolio" to view a curated list of front and back end coding projects I've created.
 
-![Screenshot](assets/screenshots/screenshot1.png)
+![Screenshot](public/screenshot2.png)
 
 The "Contact" link will bring you to a page where you can send me a message. Just enter your name, e-mail address, and text body in their respective fields, then click "Enter."
 
-![Screenshot](assets/screenshots/screenshot1.png)
+![Screenshot](public/screenshot3.png)
 
 "Resume" will take you to a page containing a list of my coding skills. Click "Download Resume" to download a PDF of my updated resume to your desktop.
+
+![Screenshot](public/screenshot4.png)
 
 ## Contributions
 When contributing to this repository, please reach out to me via e-mail to discuss the change you would like to make first. I am open to ideas both with regards to data stored in the tables and alterations to user interaction with the data.

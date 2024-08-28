@@ -4,40 +4,40 @@ import Project from '../Project';
 function Portfolio() {
     const projects = [
         {
-            title: 'Jake\'s Mongo DB Network Backend',
-            image: './project-1-mongodb.png',
-            deployedLink: '',
-            repoLink: 'https://github.com/jacobmca/The-Jake-MongoDB-Network'
+            title: 'Employee Payroll Tracker',
+            image: 'project-1-payroll.png',
+            deployedLink: 'https://jacobmca.github.io/Employee-Payroll-Tracker/',
+            repoLink: 'https://github.com/jacobmca/Employee-Payroll-Tracker'
         },
         {
-            title: 'Employee Tracker SQL Database Sample',
-            image: './project-2-sql.png',
-            deployedLink: '',
-            repoLink: 'https://github.com/jacobmca/Employee-Tracker-Database'
+            title: 'Task Board',
+            image: 'project-2-taskboard.png',
+            deployedLink: 'https://jacobmca.github.io/Task-Board-Challenge/',
+            repoLink: 'https://github.com/jacobmca/Task-Board-Challenge'
         },
         {
             title: 'Weather Dashboard',
             image: 'project-3-weather.png',
-            deployedLink: '',
+            deployedLink: 'https://jacobmca.github.io/Weather-Dashboard-Project/',
             repoLink: 'https://github.com/jacobmca/Weather-Dashboard-Project'
         },
         {
             title: 'Personal Blog Sampler',
             image: 'project-4-blog.png',
-            deployedLink: '',
+            deployedLink: 'https://jacobmca.github.io/04-Personal-Blog/',
             repoLink: 'https://github.com/jacobmca/04-Personal-Blog'
         },
         {
-            title: 'README Generator',
-            image: 'project-5-readme-generator.png',
-            deployedLink: '',
-            repoLink: 'https://github.com/jacobmca/Inquirer-README-Generator'
+            title: 'Note Taker Program',
+            image: 'project-5-notetaker.png',
+            deployedLink: 'https://note-taker-program-1.onrender.com/',
+            repoLink: 'https://github.com/jacobmca/Note-Taker-Program'
         },
         {
             title: 'Genie Text-Based Game!',
             image: 'project-6-genie.png',
-            deployedLink: '',
-            repoLink: 'https://github.com/jacobmca/genie-videogame'
+            deployedLink: 'https://jacobmca.github.io/The-Genie-Text-Game-Updated/',
+            repoLink: 'https://github.com/jacobmca/The-Genie-Text-Game-Updated'
         },
     ]
 

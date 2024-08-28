@@ -1,17 +1,46 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../index.css';
 
 function Navigation() {
     return (
         <div className="navbar navbar-bar navbar-expand-md">
             <div className="container-fluid">
-                <div class="navbar-header row-md-6">
+                <div className="navbar-header row-md-6">
                     <ul className="nav navbar-nav">
-                        <li className="nav-item me-4 navigation-links"><Link to="/" className="link-light no-text-dec">About Me</Link></li>
-                        <li className="nav-item me-4"><Link to="/portfolio" className="link-light no-text-dec">Portfolio</Link></li>
-                        <li className="nav-item me-4"><Link to="/contact" className="link-light no-text-dec">Contact</Link></li>
-                        <li className="nav-item me-4"><Link to="/resume" className="link-light no-text-dec">Resume</Link></li>
+                        <li className="nav-item me-4">
+                            <NavLink 
+                                exact 
+                                to="/" 
+                                className={({ isActive }) => isActive ? "link-light no-text-dec navigation-links active-link" : "link-light no-text-dec navigation-links"}
+                            >
+                                About Me
+                            </NavLink>
+                        </li>
+                        <li className="nav-item me-4">
+                            <NavLink 
+                                to="/portfolio" 
+                                className={({ isActive }) => isActive ? "link-light no-text-dec navigation-links active-link" : "link-light no-text-dec navigation-links"} 
+                            >
+                                Portfolio
+                            </NavLink>
+                        </li>
+                        <li className="nav-item me-4">
+                            <NavLink 
+                                to="/contact" 
+                                className={({ isActive }) => isActive ? "link-light no-text-dec navigation-links active-link" : "link-light no-text-dec navigation-links"} 
+                            >
+                                Contact
+                            </NavLink>
+                        </li>
+                        <li className="nav-item me-4">
+                            <NavLink 
+                                to="/resume" 
+                                className={({ isActive }) => isActive ? "link-light no-text-dec navigation-links active-link" : "link-light no-text-dec navigation-links"}
+                            >
+                                Resume
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
             </div>
