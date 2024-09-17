@@ -28,6 +28,10 @@ My portfolio utilizes React for the front end design and functionality. Styling 
 
 After downloading the program per the below, run "npm start" in your terminal. You should immediately be brough to the "About Me" page.
 
+Alternatively, you can click the following link to access it:
+
+[Link to Deployed Program](https://jacob-mcauliffe-react-portfolio-v1.netlify.app/)
+
 ![Screenshot](public/screenshot1.png)
 
 On the navigation bar, click "Portfolio" to view a curated list of front and back end coding projects I've created.
@@ -58,5 +62,3 @@ First off, I would like to add more projects and skills to this as I continue to
 If you have further questions, you can reach me at [mcauliffemedia@gmail.com](mailto:mcauliffemedia@gmail.com).
 
 GitHub Account: [jacobmca](https://github.com/jacobmca)
-
-[Link to Deployed Program](https://jacob-mcauliffe-react-portfolio-v1.netlify.app/)
